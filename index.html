@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid px-1 px-md-5 px-lg-1 px-xl-5 py-4 mx-auto">
+        <div class="card card0 border-0">
+            <div class="row d-flex">
+                <div class="col-lg-6">
+                    <div class="card1 pb-5">
+                        <div class="row"> <img src="https://spotbugs.github.io/images/logos/spotbugs_logo_300px.png" class="logo"> </div>
+                        <div class="row px-3 justify-content-center mt-4 mb-5 border-line"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3UNU1SGP-I3C1DRbUChgmCWTUDrcp687m-PM4ZwAhbf5_fWV7P8UkekTI3TiNauGdq78&usqp=CAU" class="image"> </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card2 card border-0 px-4 py-5">
+                        <div class="row mb-4 px-3">
+                            <h6 class="mb-0 mr-4 mt-2">Sign in with</h6>
+                            <div class="facebook text-center mr-3">
+                                <div class="fab fa-facebook"></div>
+                            </div>
+                            <div class="twitter text-center mr-3">
+                                <div class="fab fa-twitter"></div>
+                            </div>
+                            <div class="linkedin text-center mr-3">
+                                <div class="fab fa-google"></div>
+                            </div>
+                        </div>
+                        <div class="row px-3 mb-4">
+                            <div class="line"></div> <small class="or text-center">Or</small>
+                            <div class="line"></div>
+                        </div>
+                        <form id="form_id" method="post" name="myform">
+                        <div class="row px-3"> <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Username</h6>
+                            </label> <input class="mb-4" type="text" name="username" id="username" placeholder="Enter username"> </div>
+                        <div class="row px-3"> <label class="mb-1">
+                                <h6 class="mb-0 text-sm">Password</h6>
+                            </label> <input type="password" name="password" id="password" placeholder="Enter password"> </div>
+                        </form>
+                        <div class="row px-3 mb-4">
+                            <div class="custom-control custom-checkbox custom-control-inline"> <input id="chk1" type="checkbox" name="chk" class="custom-control-input"> <label for="chk1" class="custom-control-label text-sm">Remember me</label> </div> <a href="#" class="ml-auto mb-0 text-sm">Forgot Password?</a>
+                        </div>
+                        <div class="row mb-3 px-3"> <button type="submit" class="btn btn-blue text-center"  id="submit" onclick="validate()">Login</button> </div>
+                        <div class="row mb-4 px-3"> <small class="font-weight-bold">Don't have an account? <a class="text-danger ">Register</a></small> </div>
+                        <div class="row mb-4 px-3"><a class="text-primary" data-toggle="modal" data-target="#exampleModal">
+                            <small class="font-weight-bold"><i class="fa fa-fw fa-sign-out"></i>Demo Credentials</small></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-blue py-4">
+                <div class="row px-3"> <small class="ml-4 ml-sm-5 mb-2">Copyright &copy; 2019. All rights reserved.</small>
+                    <div class="social-contact ml-4 ml-sm-auto"> <span class="fa fa-facebook mr-4 text-sm"></span> <span class="fa fa-google-plus mr-4 text-sm"></span> <span class="fa fa-linkedin mr-4 text-sm"></span> <span class="fa fa-twitter mr-4 mr-sm-5 text-sm"></span> </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Login Credentials</h5>
+              <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div><h5>Administrator Login:</h5></div>
+                <div>
+                    <ul>
+                        <li><small>Username : <b>Admin123</b></small></li>
+                        <li><small>Password : <b>Admin123</b></small></li>
+                    </ul>
+                </div>
+                <div><h5>Q.A Login:</h5></div>
+                <div>
+                    <ul>
+                        <li><small>Username : <b>Qa123</b></small></li>
+                        <li><small>Password : <b>Qa123</b></small></li>
+                    </ul>
+                </div>
+                <div><h5>Developer Login:</h5></div>
+                <div>
+                    <ul>
+                        <li><small>Username : <b>Dev123</b></small></li>
+                        <li><small>Password : <b>Dev123</b></small></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+             var attempt = 3; // Variable to count number of attempts.
+            // Below function Executes on click of login button.
+            function validate(){
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            if ( username == "Admin123" && password == "Admin123"){
+                alert (" Administrator Login successfully");
+                window.location = "developerPg.html"; // Redirecting to other page.
+                return false;
+            }
+            else if ( username == "Qa123" && password == "Qa123"){
+                alert (" Q.A Login successfully");
+                window.location = "QA.html"; // Redirecting to other page.
+                return false;
+            }
+            else if ( username == "Dev123" && password == "Dev123"){
+                alert (" Developer Login successfully");
+                window.location = "coder.html"; // Redirecting to other page.
+                return false;
+            }
+            else{
+            attempt --;// Decrementing by one.
+            alert("You have left "+attempt+" attempt;");
+            // Disabling fields after 3 attempts.
+            if( attempt == 0){
+            document.getElementById("username").disabled = true;
+            document.getElementById("password").disabled = true;
+            document.getElementById("submit").disabled = true;
+            return false;
+            }
+            }
+            }
+      </script>
+</body>
+</html>
